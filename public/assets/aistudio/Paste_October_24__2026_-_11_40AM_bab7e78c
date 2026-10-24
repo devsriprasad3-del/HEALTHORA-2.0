@@ -1,0 +1,1003 @@
+# HEALTHORA AI COPILOT — COMPLETE ROUND 2 TRANSFORMATION
+
+## YOUR ROLE
+
+Act as an elite team of senior software engineers, AI architects, healthcare technology specialists, product designers, database engineers, security engineers, and quality assurance experts.
+
+Your mission is to transform my EXISTING Healthora AI Copilot website into a sophisticated, intelligent, personalized healthcare engagement platform that meets the complete Round 2 hackathon problem statement.
+
+This is an enhancement of an existing project.
+
+**DO NOT rebuild the website from scratch. DO NOT delete working features. DO NOT replace my existing application with a generic template.**
+
+Inspect the existing project, understand its architecture, preserve its functionality, and integrate the new features into the existing codebase.
+
+The final result should look and feel like a polished healthcare technology product that judges can explore, interact with, and evaluate using real application functionality.
+
+Do not merely generate UI screens. Implement working features connected to the application's existing data architecture.
+
+---
+
+# 1. PRIMARY OBJECTIVE
+
+Transform Healthora AI Copilot from a medical-report understanding application into an intelligent healthcare companion that helps people manage their health over time.
+
+The platform must connect the entire healthcare engagement journey:
+
+Medical Records
+→ AI-Powered Understanding
+→ Personalized Health Insights
+→ Medication and Appointment Reminders
+→ Wellness Recommendations
+→ Preventive Guidance
+→ Continuous Health Engagement.
+
+The copilot must help people understand their own medical information, remember important healthcare tasks, identify meaningful trends, prepare for doctor visits, and coordinate authorized family healthcare.
+
+It must support users without diagnosing diseases, prescribing treatments, or replacing healthcare professionals.
+
+Every feature must be useful, accessible, safe, and demonstrably functional.
+
+---
+
+# 2. CRITICAL RULE: PRESERVE THE EXISTING PROJECT
+
+Before making any changes, inspect the complete existing codebase.
+
+Identify:
+
+- Frontend framework and build system.
+- Existing UI components and design system.
+- Backend and API architecture.
+- Database and current schema.
+- Authentication and authorization.
+- AI model integration.
+- Existing medical-report extraction pipeline.
+- Current user and medical-record data structures.
+- Existing environment variables.
+- Current deployment setup.
+- Existing bugs and incomplete functionality.
+
+If the project uses React, TypeScript, Vite, Tailwind CSS, Supabase, Express, Google AI, or any other existing technology, continue using compatible components and services whenever practical.
+
+Do not introduce duplicate databases, duplicate AI integrations, or unnecessary frameworks.
+
+Create a safe implementation plan and then make the actual code changes.
+
+Preserve all working features.
+
+Avoid destructive database migrations.
+
+Keep the existing application branding recognizable while significantly improving its overall quality.
+
+If a feature requires an external service, implement the appropriate integration where feasible and clearly identify any configuration that remains necessary.
+
+Do not claim that a feature works unless its functionality has been implemented and tested.
+
+---
+
+# 3. PREMIUM USER INTERFACE AND EXPERIENCE
+
+Redesign and refine the existing interface into a premium, futuristic, trustworthy healthcare platform.
+
+## Visual identity
+
+Use an elegant healthcare technology aesthetic featuring:
+
+- Deep navy or charcoal backgrounds where compatible with the existing design.
+- Restrained teal, cyan, and medical-green accents.
+- Modern typography.
+- Strong visual hierarchy.
+- Beautifully structured dashboard cards.
+- Consistent spacing and alignment.
+- Subtle gradients and polished shadows.
+- Smooth, restrained animations.
+- High-quality icons.
+- Clean charts and timelines.
+- Responsive layouts.
+- Accessible colors and typography.
+- Professional loading states.
+- Helpful empty states.
+- Clear success and error messages.
+
+Avoid clutter, excessive neon effects, distracting animations, and unnecessary visual complexity.
+
+The interface should look carefully designed rather than automatically generated.
+
+## Main application navigation
+
+Integrate the following sections into the existing navigation:
+
+1. Health Overview
+2. AI Health Copilot
+3. Medical Records
+4. Medications
+5. Appointments
+6. Health Insights
+7. Wellness Coach
+8. Family Health
+9. Notifications
+10. Settings
+
+Every visible navigation item must lead to a working page or functional section.
+
+## Health overview dashboard
+
+Create a personalized dashboard showing:
+
+- Selected user's name and profile.
+- Current date.
+- Today's medication schedule.
+- Upcoming appointments.
+- Pending follow-up tasks.
+- Recent laboratory results.
+- Health trends.
+- Preventive insights.
+- Personalized wellness suggestions.
+- Recent activity.
+- Important notifications.
+- Quick access to the AI assistant.
+
+Clearly distinguish urgent attention items from routine reminders and informational insights.
+
+Never show fabricated medical information as actual user data.
+
+If a profile has no medical records, display a helpful empty state explaining how to upload or add information.
+
+---
+
+# 4. INTELLIGENT CONVERSATIONAL HEALTH ASSISTANT
+
+Build a conversational AI copilot grounded in the selected user's actual health records.
+
+## Supported questions
+
+The assistant should understand questions such as:
+
+- What was my latest HbA1c result?
+- What does my latest cholesterol report say?
+- What were my previous blood pressure readings?
+- Which medicines are currently prescribed to me?
+- When is my next appointment?
+- Have my laboratory results changed over time?
+- What should I discuss with my doctor?
+- Are any recorded follow-ups overdue?
+- Can you explain this medical term in simple English?
+- Can you explain my report in Telugu?
+
+## Mandatory retrieval architecture
+
+Before generating a record-specific answer:
+
+1. Identify the active user profile.
+2. Retrieve relevant authorized records.
+3. Filter the information to the question.
+4. Verify dates, units, and available context.
+5. Generate an understandable response using the retrieved information.
+6. Attach references to the supporting records.
+7. Indicate when information is missing or uncertain.
+
+Do not rely on general model knowledge to invent personal medical history.
+
+Do not hardcode answers for sample questions.
+
+The assistant must work with arbitrary supported questions about the available records.
+
+## Source references
+
+For each record-based answer, show available supporting details:
+
+- Medical record name.
+- Test or medication.
+- Recorded value.
+- Unit.
+- Relevant date.
+- Reference range, when provided.
+- Link to the original record.
+
+Users should be able to open the source record from the answer.
+
+## Honest answers
+
+If the information is unavailable, explicitly say so.
+
+Clearly distinguish:
+
+- Recorded medical facts.
+- Comparisons derived from multiple records.
+- General educational information.
+- Unverified information.
+- Missing data.
+
+Never fabricate values, dates, prescriptions, or source citations.
+
+## Natural conversations
+
+Support contextual follow-up questions.
+
+For example:
+
+User: What was my latest HbA1c?
+
+Assistant: Provides the latest recorded value and its source.
+
+User: How does it compare with the previous result?
+
+Assistant: Retrieves the previous comparable result and explains the difference.
+
+Preserve relevant conversational context while keeping each profile's information isolated.
+
+## Chat interface
+
+Include:
+
+- Conversation history.
+- Suggested questions.
+- Message composer.
+- Enter-to-send functionality.
+- Loading indicators.
+- Source-record cards.
+- Copy response.
+- Retry failed requests.
+- Start new conversation.
+- Clear conversation.
+- Voice input when available.
+- Spoken responses when configured.
+- Friendly empty states.
+
+Make the assistant feel responsive, useful, and transparent.
+
+---
+
+# 5. SMART MEDICATION MANAGEMENT
+
+Implement a complete prescription and medication-reminder module.
+
+## Prescription extraction
+
+Use the existing medical-document extraction pipeline to identify:
+
+- Medication name.
+- Prescribed dose.
+- Unit.
+- Route.
+- Frequency.
+- Scheduled times, if specified.
+- Start date.
+- End date or duration.
+- Additional instructions.
+- Prescribing clinician, if available.
+- Source prescription.
+- Extraction confidence or uncertainty.
+
+Preserve the original prescription.
+
+If the prescription is incomplete, ambiguous, or unreadable, request confirmation instead of guessing.
+
+Do not treat an old prescription as proof that a medication is currently being taken.
+
+## Medication dashboard
+
+Show:
+
+- Current medications.
+- Medication schedule.
+- Upcoming reminders.
+- Completed courses.
+- Discontinued medications.
+- Missed or overdue reminders.
+- Prescription source.
+- Relevant instructions.
+
+Provide useful filtering and search.
+
+## Reminder controls
+
+Users must be able to:
+
+- Review proposed reminders.
+- Approve a reminder schedule.
+- Confirm a dose was taken.
+- Snooze a reminder.
+- Edit supported reminder settings.
+- Disable reminders.
+- Mark a course as completed.
+- Review reminder history.
+
+Do not change a prescribed dose or frequency through AI-generated advice.
+
+Automatically end course-based reminders after a verified prescription end date.
+
+Do not invent an end date when none exists.
+
+## Reliable reminders
+
+Store reminder schedules persistently.
+
+Use an appropriate backend scheduler or managed service for notifications that must operate when the browser is closed.
+
+Support in-app notifications and browser notifications where available.
+
+Request notification permission appropriately.
+
+Handle timezones, duplicate reminders, failed delivery, completed courses, and disabled reminders.
+
+Never display a notification as delivered unless the system has evidence that delivery occurred.
+
+If background notifications require external infrastructure, provide an honest working fallback and document the dependency.
+
+---
+
+# 6. APPOINTMENTS AND FOLLOW-UP MANAGEMENT
+
+Create a complete appointment and follow-up system.
+
+Users must be able to:
+
+- Add appointments.
+- View upcoming appointments.
+- View past appointments.
+- Edit appointments.
+- Reschedule appointments.
+- Cancel appointments.
+- Mark appointments as completed.
+- Configure reminders.
+- Review follow-up recommendations.
+- Track outstanding healthcare tasks.
+
+Extract appointment dates and follow-up instructions from medical records when available.
+
+Store:
+
+- Appointment date and time.
+- Clinician or facility.
+- Purpose.
+- Related record.
+- Reminder settings.
+- Status.
+- Source of the information.
+
+Distinguish between a confirmed appointment and an AI-generated suggestion.
+
+If a report recommends follow-up but does not provide a date, create a task requiring scheduling rather than inventing an appointment.
+
+Identify overdue tasks only when a reliable due date exists.
+
+Provide a clear calendar or timeline interface.
+
+---
+
+# 7. PERSONALIZED WELLNESS COACH
+
+Build a personalized wellness recommendation system based on the information available for the selected profile.
+
+Use relevant data such as:
+
+- Age, when provided.
+- User-stated wellness goals.
+- Documented health conditions.
+- Relevant laboratory trends.
+- Dietary preferences.
+- Activity level.
+- Sleep habits.
+- Lifestyle information.
+- User preferences.
+
+Do not assume missing information.
+
+## Wellness categories
+
+### Nutrition
+
+Provide practical, balanced food suggestions suited to the user's stated preferences and documented needs.
+
+### Physical activity
+
+Suggest reasonable, general activity options appropriate to the available information.
+
+### Sleep
+
+Provide sustainable sleep-habit suggestions.
+
+### Daily habits
+
+Offer useful guidance about routines, hydration, and other relevant wellness habits.
+
+### Preventive care
+
+Suggest appropriate topics to discuss with a healthcare professional when supported by the user's information.
+
+## Each recommendation must explain
+
+- What the user could consider doing.
+- Why the suggestion may be relevant.
+- Which available information supports it.
+- A practical next step.
+- Any important limitation or precaution.
+
+Recommendations must be understandable and actionable without pretending to be medical treatment.
+
+Allow users to mark recommendations as helpful, dismiss them, or update their preferences.
+
+Do not recommend extreme diets, unsafe exercise, medication changes, or guaranteed health outcomes.
+
+---
+
+# 8. HEALTH TRENDS AND PREVENTIVE INSIGHTS
+
+Turn historical medical records into meaningful, evidence-based insights.
+
+## Trend tracking
+
+Support available measurements such as:
+
+- Blood glucose.
+- HbA1c.
+- Blood pressure.
+- Total cholesterol.
+- LDL cholesterol.
+- HDL cholesterol.
+- Triglycerides.
+- Hemoglobin.
+- Other consistently recorded laboratory tests.
+
+Compare only compatible measurements with appropriate units and context.
+
+Do not compare different test types as if they were identical.
+
+Do not treat one result as a trend.
+
+## Interactive charts
+
+Create polished visualizations showing:
+
+- Measurement name.
+- Values.
+- Units.
+- Dates.
+- Previous readings.
+- Reference ranges when available.
+- Source reports.
+- Clear chart labels.
+
+Use tooltips and accessible text descriptions where appropriate.
+
+## Evidence-based insight cards
+
+Identify supported observations such as:
+
+- A recorded value outside its supplied reference range.
+- A repeated abnormal measurement.
+- A consistent upward or downward trend.
+- An overdue, explicitly dated follow-up.
+- A repeat test explicitly recommended in a report.
+
+Every insight must display:
+
+1. What was observed.
+2. The supporting records.
+3. Relevant values and dates.
+4. Why it may deserve attention.
+5. A reasonable next step.
+
+Example:
+
+"Your three most recent recorded HbA1c results show an upward trend. Consider discussing this pattern with your healthcare professional."
+
+Do not state that the user has a disease based on these observations.
+
+## Preventive guidance
+
+Suggest appropriate discussions about:
+
+- Repeat tests.
+- Follow-up appointments.
+- Preventive screenings.
+- Existing health conditions.
+- Monitoring plans recommended by clinicians.
+- Questions about changes in recorded results.
+
+Do not automatically order tests or invent clinical urgency.
+
+Use applicable clinical guidance only when the necessary context is available.
+
+If the available information is insufficient, explain the limitation.
+
+---
+
+# 9. AGENTIC AI: ACTIONS THAT USERS CAN CONTROL
+
+Implement a real AI workflow system that identifies useful tasks from medical records.
+
+The agent must propose actions, explain them, and obtain user approval when required.
+
+## Workflow A: New prescription
+
+When a new prescription is uploaded:
+
+1. Extract the prescription details.
+2. Validate the extracted information.
+3. Identify ambiguous fields.
+4. Prepare a proposed medication schedule.
+5. Display the schedule for review.
+6. Allow the user to approve, edit, or reject it.
+7. Create approved reminders.
+8. Record the action in the activity history.
+
+Do not activate uncertain medication schedules automatically.
+
+## Workflow B: Follow-up tracking
+
+When an explicitly dated follow-up becomes overdue:
+
+1. Retrieve the supporting record.
+2. Verify the due date.
+3. Create a pending follow-up task.
+4. Explain why the task was generated.
+5. Let the user review or dismiss it.
+
+## Workflow C: Repeat-test tracking
+
+When a report explicitly recommends repeating a test:
+
+1. Extract the test name.
+2. Extract the recommended timeframe.
+3. Calculate the due date only when the timeframe is unambiguous.
+4. Otherwise, request confirmation.
+5. Present the task for approval.
+6. Save it according to the approval rules.
+
+## Workflow D: Doctor-visit preparation
+
+Generate useful questions based on the selected user's actual records.
+
+Examples:
+
+- What might explain the change in this measurement?
+- Should this test be repeated?
+- What monitoring plan should I discuss?
+- Are there any questions I should ask about my current prescription?
+
+Show the records supporting the proposed questions.
+
+Allow users to edit the questions.
+
+## Agent activity panel
+
+Show:
+
+- Detected event.
+- Source record.
+- Proposed action.
+- Reason for the action.
+- Approval status.
+- User decision.
+- Completion status.
+- Timestamp.
+
+Prevent duplicate actions when the same document is processed multiple times.
+
+The agent must not silently modify prescriptions, diagnose conditions, or make consequential medical decisions.
+
+---
+
+# 10. FAMILY HEALTH MANAGEMENT
+
+Support multiple authorized health profiles under an account.
+
+Include profile types such as:
+
+- Self.
+- Parent.
+- Child.
+- Spouse.
+- Other authorized family members.
+
+Each profile must have separate:
+
+- Medical records.
+- Prescriptions.
+- Medication schedules.
+- Appointments.
+- Reminders.
+- Health trends.
+- Wellness recommendations.
+- AI conversations.
+- Notifications.
+
+## Profile selector
+
+Make the selected profile clearly visible.
+
+Switching profiles must update all relevant content and isolate the conversation context.
+
+Prevent accidental display or use of another profile's medical information.
+
+## Authorization
+
+Implement appropriate backend authorization and consent.
+
+Do not assume that one adult can access another adult's medical records without permission.
+
+Apply appropriate guardian-access rules for children's profiles.
+
+Enforce data isolation at the backend and database level, not only in the interface.
+
+Test that unauthorized requests are rejected.
+
+---
+
+# 11. VOICE ASSISTANT
+
+Implement voice interaction where supported by the existing environment and available services.
+
+Include:
+
+- Microphone input.
+- Speech-to-text.
+- Spoken assistant answers.
+- Play and stop controls.
+- Listening and processing indicators.
+- Error handling.
+- Text alternatives.
+- Accessible controls.
+
+A user should be able to ask a question verbally and receive a spoken answer grounded in the selected person's records.
+
+If speech recognition is uncertain, show the recognized text for confirmation before executing sensitive actions.
+
+Do not claim that voice functionality works if its service or browser support is unavailable.
+
+Provide a graceful text-only fallback.
+
+---
+
+# 12. MULTILINGUAL SUPPORT
+
+Support at least:
+
+- English.
+- Telugu.
+- Hindi.
+
+Structure the translation system so additional languages can be added later.
+
+Carry the user's selected language across:
+
+- Navigation.
+- Dashboard.
+- Chat.
+- Suggested questions.
+- AI responses.
+- Wellness recommendations.
+- Medication reminders.
+- Appointment reminders.
+- Voice interaction.
+
+Preserve medication names, doses, units, dates, and medical meaning accurately.
+
+Do not allow translation to change a prescription's meaning.
+
+Allow the user to change the preferred language in settings.
+
+Persist the preference when the existing architecture supports secure persistence.
+
+If a translation or speech capability is unavailable, explain the limitation and provide a usable fallback.
+
+---
+
+# 13. MEDICAL SAFETY AND RESPONSIBLE AI
+
+Implement safety throughout the application.
+
+The assistant must:
+
+- Never diagnose diseases.
+- Never prescribe medications.
+- Never change prescribed doses.
+- Never tell users to stop prescribed treatment.
+- Never fabricate personal health information.
+- Never invent laboratory results or source references.
+- Explain missing information.
+- Distinguish recorded facts from general education.
+- Present risk insights as observations, not diagnoses.
+- Encourage appropriate professional consultation.
+- Provide suitable urgent-care guidance when a potential emergency is recognized.
+
+Do not assume every abnormal laboratory value indicates a disease.
+
+Interpret reference ranges in their supplied context.
+
+Do not claim clinical validation or medical certification unless independently established.
+
+Avoid alarming or overconfident language.
+
+Do not delay appropriate urgent-care guidance behind routine assistant conversations.
+
+---
+
+# 14. BACKEND, DATABASE, AND SECURITY
+
+Use the existing backend and database wherever possible.
+
+Inspect the current schema before creating new tables.
+
+Implement compatible data structures for:
+
+- User profiles.
+- Family relationships.
+- Medical records.
+- Laboratory observations.
+- Prescriptions.
+- Medication schedules.
+- Reminders.
+- Appointments.
+- Follow-up tasks.
+- Health insights.
+- Wellness recommendations.
+- Agent activity.
+- Approval history.
+- Notification status.
+- Conversation history.
+- Language preferences.
+
+Use appropriate relationships, indexes, validation, timestamps, and authorization policies.
+
+If Supabase is already used, implement compatible migrations and row-level security policies.
+
+If Express or another backend exists, use authenticated, validated endpoints for sensitive operations.
+
+Protect API keys and service credentials.
+
+Never expose private keys in frontend bundles or public repositories.
+
+Do not transmit unnecessary medical information to an AI provider.
+
+Retrieve only the records required for each question.
+
+Handle API failures without corrupting existing data.
+
+Make database migrations safe, repeatable where appropriate, and non-destructive.
+
+---
+
+# 15. NOTIFICATIONS AND SCHEDULING
+
+Implement reliable scheduling for:
+
+- Medication reminders.
+- Appointment reminders.
+- Follow-up tasks.
+- Repeat-test tasks.
+- Relevant user-approved notifications.
+
+Support:
+
+- Correct local time.
+- Timezone-aware scheduling.
+- Duplicate prevention.
+- Snoozing.
+- Editing.
+- Disabling.
+- Completed tasks.
+- Cancelled appointments.
+- Failed delivery states.
+
+Use persistent backend scheduling when reminders must work while the website is closed.
+
+If only in-app notifications are supported, label them honestly.
+
+Do not simulate successful delivery.
+
+---
+
+# 16. DEMONSTRATION MODE FOR HACKATHON JUDGES
+
+Create a clear, polished demo experience using synthetic health records.
+
+The demo must be easy to access and must not require judges to enter real personal medical information.
+
+Clearly distinguish demo data from actual user records.
+
+Create coherent sample records containing:
+
+- Multiple laboratory reports.
+- Compatible historical measurements.
+- A sample prescription.
+- A scheduled appointment.
+- A follow-up task.
+- Appropriate wellness recommendations.
+- Relevant health insights.
+
+The demo must allow a judge to:
+
+1. Open a sample user profile.
+2. Inspect a medical record.
+3. Ask a question about a recorded result.
+4. See a grounded answer and its source.
+5. Compare historical values.
+6. Review a prescription.
+7. Generate a proposed reminder schedule.
+8. Confirm or snooze a reminder.
+9. Review an appointment.
+10. Inspect an overdue follow-up when supported by the demo data.
+11. View a personalized wellness recommendation.
+12. Explore a trend chart.
+13. Review a preventive insight.
+14. Generate doctor-visit questions.
+15. Switch between authorized family profiles.
+16. Try multilingual interaction.
+17. Try voice interaction when configured.
+
+Use the same data-retrieval and processing logic for the demo that the application uses for real records.
+
+Do not hardcode responses to specific demonstration questions.
+
+Do not mix synthetic data into real medical records.
+
+If an external AI service is unavailable, provide a clearly identified fallback without pretending that it is live AI functionality.
+
+---
+
+# 17. TESTING AND QUALITY ASSURANCE
+
+Implement and run appropriate tests.
+
+## AI assistant tests
+
+Verify that:
+
+- Existing records produce accurate answers.
+- Answers show the correct source records.
+- Missing information is not fabricated.
+- Historical comparisons use compatible values.
+- Profile switching does not leak information.
+- AI failures produce useful error messages.
+
+## Medication tests
+
+Verify that:
+
+- Clear prescriptions produce reviewable schedules.
+- Ambiguous prescriptions require confirmation.
+- Duplicate processing does not create duplicate reminders.
+- Snoozing and completion update the correct state.
+- Completed courses stop generating future reminders.
+
+## Appointment tests
+
+Verify that:
+
+- Appointment dates are correct.
+- Explicitly overdue follow-ups are detected.
+- Missing dates are not invented.
+- Cancelled appointments do not generate inappropriate reminders.
+
+## Insight tests
+
+Verify that:
+
+- Compatible historical measurements are compared.
+- Units and dates are handled correctly.
+- Trends cite their supporting records.
+- Missing values are handled safely.
+- No insight is presented as a diagnosis.
+
+## Security tests
+
+Verify that:
+
+- Users cannot access unauthorized profiles.
+- API credentials are not exposed.
+- Backend authorization is enforced.
+- Family records remain isolated.
+
+## Application tests
+
+Verify that:
+
+- The application builds.
+- Existing functionality still works.
+- Navigation works.
+- Important pages render on desktop and mobile.
+- Loading and error states behave correctly.
+- The deployment configuration is preserved.
+- No broken links or critical console errors remain.
+
+Run the available test suite and build commands.
+
+Report actual results rather than claiming unverified success.
+
+---
+
+# 18. IMPLEMENTATION ORDER
+
+Implement all requested features, prioritizing them as follows.
+
+## Phase 1: Essential core
+
+- Preserve and inspect the existing application.
+- Connect the assistant to actual user records.
+- Implement source-grounded responses.
+- Implement medication management.
+- Implement appointment and follow-up tracking.
+- Implement health trends.
+- Implement preventive insights.
+- Implement personalized wellness.
+- Improve the main dashboard and UI.
+
+## Phase 2: Intelligent workflows
+
+- Prescription-to-reminder automation.
+- Overdue follow-up detection.
+- Repeat-test task generation.
+- Doctor-visit preparation.
+- User approval controls.
+- Agent activity history.
+
+## Phase 3: Bonus features
+
+- Family health management.
+- Backend-enforced data isolation.
+- Voice assistant.
+- English, Telugu, and Hindi support.
+- Additional notification channels.
+
+Do not stop after creating the frontend.
+
+Do not replace functional components with static mockups.
+
+Complete the core features and then integrate the bonus features into the same application.
+
+If a feature depends on external credentials or infrastructure, implement as much as the existing environment supports and identify the remaining requirement.
+
+---
+
+# 19. FINAL IMPLEMENTATION REQUIREMENTS
+
+After completing the changes, provide a concise report containing:
+
+1. Existing architecture discovered.
+2. Features implemented.
+3. Files modified or created.
+4. Database migrations performed.
+5. Environment variables required.
+6. External services requiring configuration.
+7. Tests executed and their actual results.
+8. Build results.
+9. Local development instructions.
+10. Deployment instructions.
+11. Remaining limitations.
+12. A short demo sequence for judges.
+
+Make the actual code changes.
+
+Preserve the existing project structure whenever practical.
+
+Do not unnecessarily rewrite the application.
+
+Do not remove working features.
+
+Do not expose secrets.
+
+Do not fabricate test results.
+
+Do not claim an external integration is functional until it has been configured and verified.
+
+The final application must be polished, responsive, accessible, secure, and demonstrably functional.
+
+---
+
+# FINAL SUCCESS CRITERION
+
+The upgraded Healthora AI Copilot must demonstrate that it can understand a user's available health records, explain them accurately, track important healthcare tasks, propose useful next steps, and help the user stay engaged with their healthcare over time.
+
+Every important insight must be supported by available information.
+
+Every consequential automated action must have appropriate controls.
+
+Every family profile must remain isolated.
+
+Every feature must either work or have its limitations clearly disclosed.
+
+**Build the best possible version of my EXISTING Healthora AI Copilot—not a replacement project, not a static prototype, and not a collection of disconnected screens.**
